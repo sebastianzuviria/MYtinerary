@@ -1,0 +1,911 @@
+/* CITY LIST */
+
+.citylist {
+  text-decoration: none;
+}
+
+.city {
+  text-align: center;
+}
+
+.citysearchflex {
+  display: flex;
+  justify-content: center;
+}
+
+.itin {
+  /* background-color: lightblue; */
+  font-size: 20px;
+  border: 1px solid black;
+}
+
+/* COMMENTS */
+
+.comments {
+  /* border-bottom: 0.5px solid black; */
+  border-top: 0.5px dotted black;
+  padding-left: 10px;
+}
+
+.commentContent {
+  margin-bottom: 10px;
+}
+
+.commentUser {
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: underline;
+
+  /* padding-left: 10px; */
+}
+
+.commentAvatar {
+  padding-left: 5px;
+  padding-top: 10px;
+}
+
+@media screen and (min-width: 450px) {
+  .commentAvatar {
+    float: right;
+    margin-right: 120px;
+  }
+}
+
+.commentHeading {
+  font-size: 20px;
+  font-weight: bold;
+  /* text-decoration: underline; */
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  /* border-top: 0.5px dotted black; */
+}
+
+.commentUsername {
+  padding-top: 15px;
+  text-align: left;
+  /* justify-content: center; */
+  /* margin-left: -5px; */
+}
+
+@media screen and (min-width: 450px) {
+  .commentUsername {
+    /* float: right; */
+    margin-left: -80px;
+  }
+}
+
+@media screen and (min-width: 450px) {
+  .commentContent {
+    /* float: right; */
+    margin-left: -80px;
+  }
+}
+
+.commentTimestamp {
+  font-style: italic;
+  font-size: 10px;
+}
+
+.commentForm {
+  border-top: 0.5px dotted black;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  /* padding-bottom: 30px; */
+}
+
+.commentMinChar {
+  font-style: italic;
+}
+
+.commentFormInput {
+  background-color: gainsboro;
+  width: 390px;
+}
+
+.chatUserName {
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: underline;
+  padding-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/* ACTIVITY */
+
+.activitycard {
+  display: flex;
+}
+
+.activitycard>div {
+  flex: 1;
+}
+
+.authorIcon {
+  /* font-size: 160px; */
+  border: 1px solid black;
+  /* margin-right: 10px; */
+  /* margin: 10px; */
+  /* width: 60px; */
+  max-height: 160px;
+}
+
+.authorName {
+  font-style: italic;
+  font-size: 15px;
+}
+
+.activtytitle {
+  padding-top: 10px;
+  text-align: center;
+  justify-content: center;
+  text-decoration: underline;
+}
+
+.viewActivityBtn {
+  /* padding-top: 100px; */
+  font-size: 12px;
+  padding: 14px 100px;
+  border-radius: 12px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: black;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  /* border: none; */
+  color: white;
+  /* box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+
+.closeActivityBtn {
+  font-size: 12px;
+  padding: 14px 100px;
+  border-radius: 12px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: slategray;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  /* border: none; */
+  color: black;
+  margin-top: 10px;
+  /* box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+
+.submitCommentBtn {
+  font-size: 12px;
+  padding: 14px 100px;
+  border-radius: 12px;
+  /* margin-bottom: 20px; */
+  margin-left: auto;
+  margin-right: auto;
+  background-color: lightskyblue;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  /* border: none; */
+  color: black;
+  /* box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+
+.fabButtonDiv {
+  padding-bottom: 10px;
+  /* padding-top: 10px; */
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* margin-bottom: 30px; */
+}
+
+.itineraryCard {
+  /* margin-bottom: 10px; */
+  padding: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.itinComplexButton {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  text-align: center;
+}
+
+/* SLIDER */
+
+.sliderContainer {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.sliderTextCentre {
+  /* position: absolute; */
+  /* top: 80%;
+  right: 100%; */
+  /* left: 60%; */
+  transform: translate(0%, -125%);
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.sliderDiv {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 390px;
+}
+
+.sliderImg {
+  width: 100%;
+  display: block;
+  max-width: 390px;
+  overflow: hidden;
+  height: 300px;
+}
+
+.sliderImgTitle {
+  text-align: center;
+  font-style: italic;
+  height: 50px;
+}
+
+/* HOME PAGE */
+
+.flexIcons {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 20px;
+  /* margin-left: auto;
+  margin-right: auto; */
+}
+
+.homepageLinkText {
+  color: #039be5;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.flexIcons>a {
+  /* flex: 1; */
+  color: black;
+}
+
+.homeBrand {
+  max-height: 120px;
+  max-width: auto;
+  padding: 10px;
+  margin-top: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.paragraphText {
+  font-size: 18px;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: 600;
+}
+
+.homeParagraphText {
+  font-size: 16px;
+  margin-bottom: 20px;
+  /* margin-top: 10px; */
+  text-align: center;
+  /* padding-bottom: 20px; */
+  /* padding-left: 10px; */
+  /* padding-right: 10px; */
+  font-weight: 500;
+}
+
+.homeBrowsing {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.homeCircle {
+  max-width: auto;
+  max-height: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flexLink {
+  flex: 1;
+  align-items: center;
+  text-align: center;
+}
+
+.icons {
+  max-width: auto;
+  /* max-height: 50px; */
+  /* display: block; */
+  color: black;
+  /* margin-left: auto;
+  margin-right: auto;
+  border: 1px solid green; */
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+/* FORM  */
+
+.registerFormPhototext {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.addPhoto {
+  /* width: 300px; */
+  margin-top: 20px;
+  padding: 5px 0px 5px 3px;
+  background-color: gainsboro;
+  border: 1px solid;
+  box-shadow: 5px 10px 18px #888888;
+
+  display: inline-block;
+}
+
+.centerInput {
+  display: block;
+  text-align: center;
+}
+
+.previewImage {
+  max-width: 145px;
+  max-height: 145px;
+  border-radius: 50%;
+  background-color: gainsboro;
+  border: 2px solid black;
+  object-fit: cover;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tandc {
+  color: #039be5;
+  text-decoration: underline;
+}
+
+.invalid-feedback {
+  color: red;
+  font-size: 12px;
+  padding-bottom: 10px;
+  margin-left: 10px;
+}
+
+.forminput {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  padding-left: 10px;
+}
+
+.createAccountLink {
+  color: #039be5;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.createAccountText {
+  text-align: center;
+}
+
+.loginSocialFlex {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.loginSocialBtn {
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid black;
+  /* text-align: center; */
+  margin-bottom: 10px;
+  max-height: 100px;
+  max-width: 100px;
+}
+
+.loginGBtn {
+  width: 200px;
+  background-color: rgb(209, 72, 54);
+  color: white;
+
+  padding: 14px 22px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  border: none;
+  color: white;
+  margin-top: 10px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.socialDiv {
+  margin-bottom: 10px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.googleBtn {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 300px;
+  /* font-size: 10px; */
+}
+
+.facebookBtn {
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  /* font-size: 10px; */
+}
+
+.googleComponentBtn {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 12px;
+  border-radius: 12px;
+
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.loginFBtn {
+  width: 200px;
+  background-color: #4c69ba;
+  color: white;
+  font-size: 12px;
+  padding: 14px 22px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  border: none;
+  color: white;
+  margin-top: 10px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.loginButton {
+  font-size: 12px;
+  padding: 14px 100px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: skyblue;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  border: none;
+  color: white;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.loginButtonDisabled {
+  font-size: 12px;
+  padding: 14px 100px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  color: black;
+  border: 2px solid #e7e7e7;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+}
+
+.registerFormInput {
+  background-color: gainsboro;
+  width: 390px;
+  /* border: 1px solid gray; */
+}
+
+.selectForms {
+  width: 390px;
+  max-height: 50px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  padding: 10px;
+  background-color: gainsboro;
+  border: 0.5px solid gray;
+  border-radius: 5px;
+}
+
+/* ICONS */
+
+.homeIcon {
+  /* margin-top: 5px;
+  margin-bottom: 5px; */
+  color: black;
+  /* font-size: 40px; */
+  /* border: 1px solid black; */
+}
+
+.cityIcon {
+  /* margin-top: 5px;
+  margin-bottom: 5px; */
+  color: black;
+  /* font-size: 100px; */
+}
+
+.cityfilter {
+  width: 400px;
+}
+
+.cityIconText {
+  text-align: center;
+  font-style: italic;
+  color: black;
+  text-decoration: none;
+}
+
+.confirmFabButton {
+  color: #039be5;
+}
+
+.gotoFav {
+  text-decoration: none;
+}
+
+.addToFavText {
+  text-decoration: underline;
+}
+
+.favIconDiv {
+  /* margin-right: 10px;
+
+  /* margin-top: 5px;
+  margin-left: 10px; */
+  /* margin-right: 10px; */
+  padding-top: 10px;
+  padding-right: 10px;
+}
+
+/* NAVIGATION */
+
+.navIcon {
+  /* /* padding-right: 5px; */
+  margin-right: 10px;
+  color: black;
+  text-align: center;
+  color: black;
+}
+
+.navText {
+  text-align: center;
+  color: black;
+  text-decoration: none;
+}
+
+.toolBarFlex {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  /* padding-top: 100px; */
+}
+
+.appBar {
+  margin-bottom: 20px;
+}
+
+.navApp {
+  margin-top: 80px;
+}
+
+.bottomNav {
+  padding-bottom: 55px;
+}
+
+.IconaAccountCircle {
+  /* border: 1px solid black; */
+  color: skyblue;
+}
+
+.removePhoto {
+  border: 1px solid black;
+  font-size: 12px;
+  border-radius: 12px;
+  display: block;
+}
+
+.removePhotoDiv {
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.previewPhoto {
+  margin-top: 20px;
+}
+
+/* ITIN CARDS */
+
+.itinCardDiv {
+  margin-left: 10px;
+  /* border: 1px solid black; */
+}
+
+@media screen and (min-width: 450px) {
+  .itinCardDiv {
+    float: right;
+    margin-right: 20px;
+    /* border: 1px solid black; */
+  }
+}
+
+.itinCardTitleText {
+  text-align: center;
+  justify-content: center;
+  text-decoration: underline;
+}
+
+.itinCardTitleBy {
+  text-decoration: none;
+  font-style: italic;
+  font-size: 14px;
+  text-align: center;
+  justify-content: center;
+  margin-top: -20px;
+}
+
+.dashboardUsername {
+  font-weight: bold;
+  /* text-align: center; */
+  /* margin-bottom: 15px; */
+}
+
+.dashboardNoFavMessage {
+  padding: 20px;
+  text-align: center;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.dashboardImgDiv {
+  justify-content: center;
+  display: flex;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  align-content: center;
+}
+
+.dashboardImg {
+  max-width: 125px;
+  /* max-height: 100px; */
+  border: 2px solid black;
+  border-radius: 5px;
+  /* object-fit: cover; */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 450px) {
+  .dashboardImg {
+    max-width: 250px;
+    /* float: right; */
+    margin-right: 25px;
+  }
+}
+
+/* On screens that are 600px or less*/
+/* @media screen and (max-width: 600px) {
+  dashboardImg {
+    max-width: 120px;
+  }
+} */
+
+.starRatingComponent {
+  margin-left: 10px;
+  /* padding-top: -20px; */
+}
+
+.starRatingComponentDiv {
+  margin-top: -5px;
+}
+
+.cityImg {
+  max-width: 180px;
+  max-height: 100px;
+}
+
+.itinImg {
+  max-width: 90px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+/* CMS */
+
+.cmsUploadimage {
+  /* border: 0.5px solid black; */
+  background-color: gainsboro;
+  /* padding: 15px; */
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  /* margin: 10px 30px 10px 30px; */
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  max-width: 390px;
+}
+
+.cmsTitletext {
+  text-align: center;
+  border-top: 1px dotted black;
+  /* border-bottom: 1px solid black; */
+  /* margin-bottom: 15px; */
+}
+
+.cmsBox {
+  /* border: 1px solid black; */
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+
+  /* padding-bottom: 10px; */
+}
+
+.cmsCard {
+  padding-bottom: 10px;
+}
+
+.cmsButton {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+}
+
+.cmsAction {
+  margin-bottom: 15px;
+  margin-top: 5px;
+}
+
+.cmsCards {
+  padding: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.deleteButton {
+  text-align: center;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  /* padding-top: 10px; */
+}
+
+.cmsImage {
+  /* display: flex;
+  flex: 1; */
+
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.cmsImageDiv {
+  display: flex;
+  justify-content: center;
+}
+
+.editCmsitems {
+  text-align: center;
+  text-decoration: underline;
+  color: #008cba;
+  margin-bottom: 5px;
+}
+
+.cmswarning {
+  margin-top: -5px;
+  color: red;
+  font-size: 12px;
+}
+
+.cmsimagerequired {
+  /* margin-top: -5px; */
+  color: black;
+  font-size: 12px;
+}
+
+/* HASHTAG PAGE */
+
+.hashtagHeader {
+  text-align: center;
+}
+
+.hashtagtext {
+  font-weight: bold;
+}
+
+.hashtagTags {
+  /* font-weight: bold; */
+  /* font-style: italic; */
+  font-size: 15px;
+  text-decoration: none;
+  margin-left: 3px;
+}
+
+.itinIconpanel {
+  text-align: center;
+  /* padding-bottom: 5px; */
+  padding-top: 10px;
+  padding-right: 12px;
+}
+
+@media screen and (min-width: 450px) {
+  .itinIconpanel {
+    margin-left: 10px;
+    margin-top: 5px;
+    float: left;
+
+  }
+}
+
+.buttonText {
+  padding-left: 4px;
+  font-size: 12px;
+}
+
+.headerDiv {
+  margin-top: -12px;
+  margin-bottom: -8px;
+  font-size: 25px;
+  /* text-decoration: underline; */
+  text-align: center;
+  padding-bottom: 10px;
+  /* font-family: 'Courier New', Courier, monospace */
+}
+
+@media screen and (min-width: 450px) {
+  .headerDiv {
+    padding: 15px;
+    font-size: 100px;
+    /* text-decoration: underline; */
+    text-align: center;
+    /* font-family: 'Courier New', Courier, monospace */
+  }
+}
