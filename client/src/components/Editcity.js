@@ -204,7 +204,7 @@ class Editcity extends Component {
                     color="primary"
                     onClick={this.onSubmit}
                   >
-                    Update City!<Icon>save</Icon>
+                    Update City <Icon>save_alt</Icon>
                   </Button>
                 </div>
                 <div>{deleteButton}</div>
@@ -218,7 +218,7 @@ class Editcity extends Component {
                     color="primary"
                     onClick={this.onSubmit}
                   >
-                    Update City!<Icon>save</Icon>
+                    Update City!<Icon>save_alt</Icon>
                   </Button>
                   <div>
                     <p className="cmsimagerequired">
@@ -231,7 +231,7 @@ class Editcity extends Component {
           </Card>
 
           <div className="cmsTitletext">
-            <h3>Preview Your Image Below : </h3>
+            <h3>Preview Image: </h3>
           </div>
         </div>
       </React.Fragment>
@@ -262,7 +262,7 @@ class Editcity extends Component {
     const searchlist = (
       <React.Fragment>
         <div className="cmsTitletext">
-          <p>Edit a City from the list below :</p>
+          <p>Edit a City from the list:</p>
         </div>
         <div className="citysearchflex">
           <TextField

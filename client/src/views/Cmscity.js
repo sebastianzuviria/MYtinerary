@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
-import { Link } from "react-router-dom";
 import { createCity } from "../actions/cmsActions";
 
 import Header from "../components/layout/Header";
@@ -93,13 +92,7 @@ class Cmscity extends Component {
       <React.Fragment>
         <Header title={"Create Cities"} />
         <div className="cmsTitletext">
-          <p>Fill out the form below to create a new city.</p>
-          <p>Or click below to edit an existing city.</p>
-          <div>
-            <Link to="/cmscity/editcity">
-              <Button variant="outlined">Edit Cities</Button>
-            </Link>
-          </div>
+          <p>Complete form and submit to create a new city.</p>
         </div>
       </React.Fragment>
     );
@@ -157,7 +150,7 @@ class Cmscity extends Component {
               <React.Fragment>
                 <div className="cmsAction">
                   <Button variant="outlined" color="primary" disabled>
-                    Create City!<Icon>save</Icon>
+                    Upload City<Icon>save_alt</Icon>
                   </Button>
                 </div>
                 <div>
@@ -175,7 +168,7 @@ class Cmscity extends Component {
                     onClick={this.onSubmit}
                     value="Submit"
                   >
-                    Create City!<Icon>save</Icon>
+                    Upload City<Icon>save_alt</Icon>
                   </Button>
                 </div>
               </React.Fragment>
@@ -183,7 +176,7 @@ class Cmscity extends Component {
           </Card>
 
           <div className="cmsTitletext">
-            <h3>Preview Your Image Below : </h3>
+            <h3>Preview Image:</h3>
           </div>
         </div>
       </React.Fragment>

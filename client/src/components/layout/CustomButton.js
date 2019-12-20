@@ -7,19 +7,6 @@ class CustomButton extends Component {
   render() {
     return (
       <div className="fabButtonDiv">
-        {/* <Fab
-          disabled={this.props.disabled}
-          className="fabButton"
-          color={this.props.color}
-          variant={this.props.variant}
-          size={this.props.size}
-          aria-label="Add"
-          type={this.props.type}
-          value={this.props.value}
-        >
-          {this.props.title}
-        </Fab> */}
-
         <Button
           style={{
             backgroundColor: this.props.bgcolor

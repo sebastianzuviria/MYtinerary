@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { createItinerary } from "../actions/cmsActions";
 import { fetchCities } from "../actions/citiesActions";
-import { Link } from "react-router-dom";
 
 import Header from "../components/layout/Header";
 
@@ -110,13 +109,13 @@ class Cmsitin extends Component {
       <React.Fragment>
         <Header title={"Create Itineraries"} />
         <div className="cmsTitletext">
-          <p>Fill out the form below to create a new city.</p>
-          <p>Or click below to edit an existing Itinerary.</p>
+          <p>Complete form and submit to create a new itinerary.</p>
+          {/* <p>Or click here to edit an existing Itinerary.</p>
           <div>
             <Link to="/cmsitinerary/edititinerary">
               <Button variant="outlined">Edit Itineraries</Button>
             </Link>
-          </div>
+          </div> */}
         </div>
       </React.Fragment>
     );
@@ -286,13 +285,8 @@ class Cmsitin extends Component {
               <React.Fragment>
                 <div className="cmsAction">
                   <Button variant="outlined" color="primary" disabled>
-                    Create Itinerary!<Icon>save</Icon>
+                    Upload Itinerary <Icon>save_alt</Icon>
                   </Button>
-                </div>
-                <div>
-                  <p className="cmsimagerequired">
-                    *Fill out Form to enable Create Itinerary.
-                  </p>
                 </div>
               </React.Fragment>
             ) : (
@@ -304,7 +298,7 @@ class Cmsitin extends Component {
                     onClick={this.onSubmit}
                     value="Submit"
                   >
-                    Create Itinerary!<Icon>save</Icon>
+                    Upload Itinerary<Icon>save_alt</Icon>
                   </Button>
                 </div>
               </React.Fragment>

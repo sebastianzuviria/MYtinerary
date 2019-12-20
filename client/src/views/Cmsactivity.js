@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { createActivity } from "../actions/cmsActions";
 import { fetchItineraries } from "../actions/itinerariesActions";
-import { Link } from "react-router-dom";
 
 import Header from "../components/layout/Header";
 
@@ -91,13 +90,7 @@ class Cmsactivity extends Component {
       <React.Fragment>
         <Header title={"Create Activities"} />
         <div className="cmsTitletext">
-          <p>Fill out the form below to create a new Activity.</p>
-          <p>Or click below to edit an existing activity.</p>
-          <div>
-            <Link to="/cmsactivity/editactivity">
-              <Button variant="outlined">Edit Activities</Button>
-            </Link>
-          </div>
+          <p>Complete form and submit to create a new Activity.</p>
         </div>
       </React.Fragment>
     );
@@ -176,13 +169,8 @@ class Cmsactivity extends Component {
               <React.Fragment>
                 <div className="cmsAction">
                   <Button variant="outlined" color="primary" disabled>
-                    Create Activity!<Icon>save</Icon>
+                    Upload Activity<Icon>save_alt</Icon>
                   </Button>
-                </div>
-                <div>
-                  <p className="cmsimagerequired">
-                    *Fill out Form to enable Create Activity.
-                  </p>
                 </div>
               </React.Fragment>
             ) : (
@@ -194,7 +182,7 @@ class Cmsactivity extends Component {
                     onClick={this.onSubmit}
                     value="Submit"
                   >
-                    Create Activity!<Icon>save</Icon>
+                    Upload Activity<Icon>save_alt</Icon>
                   </Button>
                 </div>
               </React.Fragment>
@@ -202,7 +190,7 @@ class Cmsactivity extends Component {
           </Card>
 
           <div className="cmsTitletext">
-            <h3>Preview Your Image Below : </h3>
+            <h3>Preview Image:</h3>
           </div>
         </div>
       </React.Fragment>

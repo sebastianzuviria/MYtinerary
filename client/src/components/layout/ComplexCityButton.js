@@ -91,9 +91,7 @@ class ButtonBases extends Component {
   }
 
   render() {
-    // function ButtonBases(props) {
     const { classes } = this.props;
-    // console.log(this.props);
 
     return (
       <div className={classes.root}>

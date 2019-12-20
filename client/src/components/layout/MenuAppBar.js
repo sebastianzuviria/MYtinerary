@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 
 import { connect } from "react-redux";
 import { logoutUser } from "../../actions/authActions";
-//import { NavLink } from "react-router-dom";
 
 import Avatar from "@material-ui/core/Avatar";
 
@@ -74,10 +73,8 @@ toggleAcount(){
 render() {
   const { isAuthenticated, user } = this.props.auth;
 
-  // NAVIGATION
   const loginStateAcount = (
     <div>
-      {/* <Divider /> */}
       <NavItem button>
         <NavLink onClick={this.onLogoutClick.bind(this)} to="/">
        Log Out
@@ -88,19 +85,16 @@ render() {
 
   const loginStateItineraries = (
     <div>
-      {/* <Divider /> */}
       <NavItem button>
         <NavLink href="/dashboard">
           Favorites
         </NavLink>
       </NavItem>
-      {/* <Divider /> */}
       <NavItem button>
         <NavLink href="/cms">
           Uploads
         </NavLink>
       </NavItem>
-      {/* <Divider /> */}
       <NavItem button>
         <NavLink href="/cities">
           Cities
@@ -147,7 +141,6 @@ render() {
     </div>
   );
 
-  // LINKS
   const authLinks = (
     <div>
       <div>

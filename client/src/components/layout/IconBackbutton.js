@@ -19,12 +19,5 @@ class BackButton extends Component {
   }
 }
 
-// BackButton.defaultProps = {
-//   standAlone: true
-// };
-
-// BackButton.propTypes = {
-//   standAlone: PropTypes.bool.isRequired
-// };
 
 export default withRouter(BackButton);

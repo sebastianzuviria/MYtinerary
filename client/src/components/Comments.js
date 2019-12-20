@@ -85,7 +85,6 @@ class Comments extends Component {
   render() {
     const { errors } = this.state;
     const { isAuthenticated } = this.props.auth;
-    //COMMENT LIST
     const commentList = this.props.comments.comments.map(comment => (
       <div className="comments" key={comment._id + comment.user}>
         <Grid container spacing={0} direction="row">
@@ -112,7 +111,6 @@ class Comments extends Component {
       </div>
     ));
 
-    //COMMENT FORM
     const commentFormGuest = (
       <React.Fragment>
         <div className="commentForm">
@@ -201,7 +199,6 @@ class Comments extends Component {
 
     return (
       <div className="Comments">
-        {/* <Header title={"Comments"} /> */}
         <div className="commentHeading">Comments</div>
         <React.Fragment>{commentList.reverse()}</React.Fragment>
         <React.Fragment>

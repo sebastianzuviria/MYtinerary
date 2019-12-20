@@ -52,17 +52,14 @@ class ItinCard extends Component {
     this.expandClose = this.expandClose.bind(this);
   }
 
-  // CLOSE DIALOG
   dialogClose = () => {
     this.setState({ open: false });
   };
 
-  // CLOSE SNACKBAR
   snackbarClose = () => {
     this.setState({ snackbar: false });
   };
 
-  // SAVE TO FAVORITES BUTTON
   addToFav = async event => {
     this.setState({ open: true });
     let eventTargetId = event;
@@ -76,7 +73,6 @@ class ItinCard extends Component {
     }, 1500);
   };
 
-  // REMOVE FAV AND CLOSE SNACKBAR
   handleOpen = event => {
     this.setState({ open: true, snackbar: false });
     let eventTargetId = event;
@@ -88,7 +84,6 @@ class ItinCard extends Component {
     });
   };
 
-  // REMOVE FAV - CONFIRM BUTTON
   confirmButton = async () => {
     let userID = this.props.auth.user.id;
     let favData = {
@@ -108,8 +103,8 @@ class ItinCard extends Component {
     }
   };
 
-  // OPEN (FETCH) ACTIVITY AND COMMENTS
   expandOpen(event) {
+    
     let eventTargetId = event.target.id;
 
     this.props.fetchActivityByKey(eventTargetId);
@@ -121,7 +116,6 @@ class ItinCard extends Component {
     }));
   }
 
-  //CLOSE ACTIVITY AND COMMENTS
   expandClose() {
     this.setState(() => ({
       eventId: "",
@@ -206,13 +200,10 @@ class ItinCard extends Component {
     const authedIcons = (
       <React.Fragment>
         <div className="itinIconpanel">
-          {/*  TERNARY CONDITION*/}
           {this.props.profile.favid.includes(this.props._id) ? (
             <React.Fragment>
-              {/*  DASHBOARD CONDITION*/}
               {this.props.history === "/dashboard" ? (
                 <React.Fragment>
-                  {/*  DASHBOARD PAGE CONDITION - FAV REMOVE*/}
                   <Fab variant="round">
                     <Icon
                       value={this.props.title}
@@ -227,7 +218,6 @@ class ItinCard extends Component {
                 </React.Fragment>
               ) : (
                 <React.Fragment>
-                  {/*  DASHBOARD PAGE CONDITION - FAV SAVED*/}
                   <Fab variant="round" disabled>
                     <Icon value={this.props.title} fontSize="large" onClick={this.handleOpen.bind(this, this.props._id)} >
                       favorite
@@ -239,7 +229,6 @@ class ItinCard extends Component {
             </React.Fragment>
           ) : (
             <React.Fragment>
-              {/*  ITIN PAGE CONDITION - ADD TO FAV*/}
               <Fab variant="round">
                 <Icon
                   value={this.props.title}
@@ -260,7 +249,6 @@ class ItinCard extends Component {
       <React.Fragment>
         <div className="itineraryCard">
           <Card raised>
-            {/* CARD HEADER */}
             <Grid container spacing={0}>
               <Grid item xs={9} sm={6}>
                 <div className="itinCardDiv">
@@ -268,13 +256,11 @@ class ItinCard extends Component {
                   <div className="itinCardTitleBy">By: {this.props.author}</div>
                 </div>
               </Grid>
-              {/* CARD ICONS => TERNARY : AUTHED : UNAUTHED */}
               <Grid item xs={3} sm={6}>
                 {isAuthenticated ? authedIcons : unauthedIcons}
               </Grid>
             </Grid>
 
-            {/* CARD CONTENT */}
             <CardContent>
               <Grid container spacing={0}>
                 <Grid item xs={5} sm={6}>
@@ -287,20 +273,16 @@ class ItinCard extends Component {
                   </div>
                 </Grid>
                 <Grid item xs={7} sm={6}>
-                  {/* TIME */}
                   <Grid item xs={10}>
                     <div>• Time: {this.props.duration} Hours</div>
                   </Grid>
-                  {/* COST */}
                   <Grid item xs={10}>
                     <div>• Cost: {this.props.price}</div>
                   </Grid>
-                  {/* LIKES */}
                   <Grid item xs={10}>
                     <div>• Likes: {this.props.likes} </div>
                   </Grid>
 
-                  {/* RATINGS */}
                   <Grid item xs={10}>
                     <div className="starRatingComponentDiv">
                       • Rating:
@@ -313,7 +295,6 @@ class ItinCard extends Component {
                       />
                     </div>
                   </Grid>
-                  {/* HASHTAGS */}
                   <Grid item xs={12}>
                     <div>
                       • Hashtags:{" "}
@@ -342,7 +323,6 @@ class ItinCard extends Component {
               </Grid>
             </CardContent>
 
-            {/* {BUTTON} */}
             {this.state.eventId === this.props.activitykey ? (
               [
                 <Activity
@@ -375,7 +355,6 @@ class ItinCard extends Component {
               </button>
             )}
 
-            {/* END OF CARD */}
           </Card>
         </div>
         <Snackbar

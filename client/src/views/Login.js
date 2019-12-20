@@ -9,11 +9,11 @@ import {
   socialRegisterUser
 } from "../actions/authActions";
 import { GoogleLogin } from "react-google-login";
-import FacebookLogin from "react-facebook-login/dist/facebook-login-render-props";
+// import FacebookLogin from "react-facebook-login/dist/facebook-login-render-props";
 import { googleClientID } from "./../keys.js";
 
 import {
-  FacebookLoginButton,
+  //FacebookLoginButton,
   GoogleLoginButton
 } from "react-social-login-buttons";
 import Header from "./../components/layout/Header";
@@ -37,12 +37,9 @@ class Login extends Component {
       isAuthenticated: false,
       user: null,
       token: ""
-      // loginError: false,
-      // redirect: false
     };
   }
 
-  // RE-ENABLE PUSH (REDIRECT)
   componentDidMount() {
     if (this.props.auth.isAuthenticated) {
       this.props.history.push("/");
@@ -58,7 +55,6 @@ class Login extends Component {
     }
   }
 
-  // LOGOUT
 
   logout = () => {
     this.setState({
@@ -79,7 +75,6 @@ class Login extends Component {
 
   componentClicked = () => console.log("clicked");
 
-  // SUBMIT
 
   onSubmit = e => {
     e.preventDefault();
@@ -98,21 +93,21 @@ class Login extends Component {
 
   render() {
     const { errors } = this.state;
-    const responseFacebook = response => {
-      console.log(response);
-      let facebookData;
-      facebookData = {
-        facebookID: response.id,
-        email: response.email,
-        password: "",
-        username: response.name,
-        firstname: "",
-        lastname: "",
-        avatar: response.picture.data.url,
-        accesstoken: response.accessToken
-      };
-      this.props.socialRegisterUser(facebookData);
-    };
+    // const responseFacebook = response => {
+    //   console.log(response);
+    //   let facebookData;
+    //   facebookData = {
+    //     facebookID: response.id,
+    //     email: response.email,
+    //     password: "",
+    //     username: response.name,
+    //     firstname: "",
+    //     lastname: "",
+    //     avatar: response.picture.data.url,
+    //     accesstoken: response.accessToken
+    //   };
+    //   this.props.socialRegisterUser(facebookData);
+    // };
 
     const responseGoogle = response => {
       let googleData;
@@ -133,13 +128,12 @@ class Login extends Component {
       <React.Fragment>
         <Header title={"Login"} />
         <div className="itineraryCard">
-          {/* START OF FORM */}
           <Card raised className="commentForm">
             <form onSubmit={this.onSubmit}>
               <div>
                 <TextField
                   className="registerFormInput"
-                  id="outlined-with-placeholder"
+                  id="1"
                   label="Please enter your Email:"
                   placeholder="email:"
                   margin="normal"
@@ -157,7 +151,7 @@ class Login extends Component {
               <div>
                 <TextField
                   className="registerFormInput"
-                  id="outlined-with-placeholder"
+                  id="2"
                   label="Please enter your Password:"
                   placeholder="Password:"
                   margin="normal"
@@ -177,7 +171,6 @@ class Login extends Component {
                 )}
               </div>
 
-              {/* SUBMIT BUTTON */}
               <div>
                 <CustomButton
                   bgcolor={"#F48FB1"}
@@ -189,7 +182,8 @@ class Login extends Component {
                   value={"submit"}
                 />
               </div>
-              <div>*Sign Up or Register using third party services.</div>
+              <div>
+              <div>Login with Google Account.</div>
 
               <div className="socialDiv">
                 <div>
@@ -212,7 +206,7 @@ class Login extends Component {
                     theme="dark"
                   />
                 </div>
-                <div>
+                {/* <div>
                   <FacebookLogin
                     appId="284220635589707"
                     callback={responseFacebook}
@@ -228,7 +222,8 @@ class Login extends Component {
                       </FacebookLoginButton>
                     )}
                   />
-                </div>
+                </div> */}
+              </div>
               </div>
             </form>
           </Card>
@@ -238,11 +233,10 @@ class Login extends Component {
     const noAccountMessage = (
       <div>
         <p className="createAccountText">
-          Dont have a MYtinerary account?{" "}
+          Don't have a MYtinerary account?{" "}
           <Link to="/Signup">
             <span className="createAccountLink">Create an account!</span>
           </Link>{" "}
-          Its totally free and only takes a minute.
         </p>
       </div>
     );

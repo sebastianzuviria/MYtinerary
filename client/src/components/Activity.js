@@ -4,7 +4,6 @@ import { withStyles } from "@material-ui/core/styles";
 import { connect } from "react-redux";
 import compose from "recompose/compose";
 import MobileStepper from "@material-ui/core/MobileStepper";
-// import Paper from "@material-ui/core/Paper";
 
 import Button from "@material-ui/core/Button";
 import KeyboardArrowLeft from "@material-ui/icons/KeyboardArrowLeft";

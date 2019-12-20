@@ -229,7 +229,7 @@ class EditItinerary extends Component {
       <React.Fragment>
         <FormControl variant="filled">
           <InputLabel htmlFor="filled-rating-simple">
-            Select Rating out of 5:
+            Select Rating:
           </InputLabel>
           <Select
             className="selectForms"
@@ -276,7 +276,7 @@ class EditItinerary extends Component {
                 />
               </div>
               <p className="cmswarning">
-                *Warning : Changing Title can affect linked Activity
+                *Warning : Editing Title will affect linked Activity
               </p>
               <div> {selectCity}</div>
               <div>
@@ -335,7 +335,7 @@ class EditItinerary extends Component {
                     color="primary"
                     onClick={this.onSubmit}
                   >
-                    Update Itinerary!<Icon>save</Icon>
+                    Update Itinerary <Icon>save_alt</Icon>
                   </Button>
                 </div>
                 <div>{deleteButton}</div>
@@ -349,7 +349,7 @@ class EditItinerary extends Component {
                     color="primary"
                     onClick={this.onSubmit}
                   >
-                    Update Itinerary!<Icon>save</Icon>
+                    Update Itinerary <Icon>save_alt</Icon>
                   </Button>
                   <div>
                     <p className="cmsimagerequired">
@@ -377,7 +377,7 @@ class EditItinerary extends Component {
     const searchlist = (
       <React.Fragment>
         <div className="cmsTitletext">
-          <p>Edit an Itinerary from the list below :</p>
+          <p>Edit an Itinerary from the list:</p>
         </div>
         <div className="citysearchflex">
           <TextField

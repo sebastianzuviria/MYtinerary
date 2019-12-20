@@ -32,9 +32,6 @@ class CmsCards extends Component {
                   variant={"extended"}
                   value={this.props.subject}
                 />
-                {/* <span className="homepageLinkText">
-                  Create {this.props.subject}
-                </span> */}
               </NavLink>
             </div>
 

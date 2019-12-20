@@ -191,16 +191,13 @@ class Signup extends Component {
       <React.Fragment>
         <Link to="/login">
           <p className="homepageLinkText">
-            *Google & Facebook Registration is Supported.
+            You can LogIn with your Google Account.
           </p>
         </Link>
 
-        <div className="registerFormPhototext">Upload Profile Image Below:</div>
+        <div className="registerFormPhototext">Upload Profile Image:</div>
         <div className="cmsUploadimage">
           <input type="file" onChange={this.fileChangedHandler} />
-        </div>
-        <div>
-          <p>*Gravatar is Supported.</p>
         </div>
       </React.Fragment>
     );

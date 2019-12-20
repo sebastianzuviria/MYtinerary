@@ -213,7 +213,7 @@ class EditActivity extends Component {
                     color="primary"
                     onClick={this.onSubmit}
                   >
-                    Update Activity!<Icon>save</Icon>
+                    Update Activity <Icon>save_alt</Icon>
                   </Button>
                 </div>
                 <div>{deleteButton}</div>
@@ -227,7 +227,7 @@ class EditActivity extends Component {
                     color="primary"
                     onClick={this.onSubmit}
                   >
-                    Update Activity!<Icon>save</Icon>
+                    Update Activity!<Icon>save_alt</Icon>
                   </Button>
                   <div>
                     <p className="cmsimagerequired">
@@ -240,7 +240,7 @@ class EditActivity extends Component {
           </Card>
 
           <div className="cmsTitletext">
-            <h3>Preview Your Image Below : </h3>
+            <h3>Preview Image: </h3>
           </div>
         </div>
       </React.Fragment>
@@ -273,7 +273,7 @@ class EditActivity extends Component {
     const searchlist = (
       <React.Fragment>
         <div className="cmsTitletext">
-          <p>Edit an Activity from the list below :</p>
+          <p>Edit an Activity from the list:</p>
         </div>
         <div className="citysearchflex">
           <TextField
