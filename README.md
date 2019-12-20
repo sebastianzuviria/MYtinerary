@@ -13,3 +13,7 @@ npm run client-install
 
 npm start
 
+# User TEST 
+
+mail: Lady_Like_to_Hike@test.com  
+password: 123456
